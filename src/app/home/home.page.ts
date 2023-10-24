@@ -11,11 +11,14 @@ export class HomePage {
   valor1! : number;
   valor2! : number;
   isButtonClicked: number = -1;
+  aux : number = 1;
 
   constructor() {}
 
   adicionarNumero(valor : string) {
-    this.zerar();
+    if ((this.isButtonClicked !== -1) && (this.aux === 1)) {
+      this.zerar();
+    }
     if ((this.visor.length === 1) && (this.visor === '0')) {
       this.visor = valor;
     } else if (valor === '.' && this.visor.indexOf('.') === -1){
@@ -27,6 +30,7 @@ export class HomePage {
 
   zerar() {
     this.visor = '0';
+    this.aux = 0;
   }
 
   adicionarOperacao(valor : number) {
@@ -67,10 +71,11 @@ export class HomePage {
   }
 
   toggleButton(operation: number) {
+    this.aux = 1;
     if (this.isButtonClicked === operation) {
-      this.isButtonClicked = -1; // Desativa o botão se ele já estiver clicado
+      this.isButtonClicked = -1; 
     } else {
-      this.isButtonClicked = operation; // Ativa o botão com a operação correspondente
+      this.isButtonClicked = operation;
     }
   }
 }

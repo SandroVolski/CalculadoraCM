@@ -74,11 +74,11 @@
     </ion-item>
 
     <ion-item lines="none">
-      <ion-fab-button id="zero" (click)="adicionarNumero('0')">
+      <ion-button id="zero" (click)="adicionarNumero('0')">
         0
-       </ion-fab-button>
+       </ion-button>
        <ion-fab-button (click)="adicionarNumero('.')">
-        ,
+        .
        </ion-fab-button>
        <ion-fab-button class="operacao" (click)="calcular()" (click)="toggleButton(-1)">
          =

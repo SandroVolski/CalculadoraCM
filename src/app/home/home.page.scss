@@ -1,3 +1,4 @@
+
 ion-list{
   height: 100%;
 }
@@ -12,7 +13,7 @@ ion-input{
   margin-right: 7%;
 }
 
-ion-fab-button{
+ion-fab-button, ion-button{
   width: 20%;
   margin: 0 auto;
   margin-top: 3%;
@@ -42,6 +43,7 @@ ion-fab-button{
 }
 
 #zero{
+  --border-radius: 60px;
   width: 45%;
   height: 90%;
 }
