@@ -1,49 +1,128 @@
+@media (orientation: portrait) {
 
-ion-list{
-  height: 100%;
+  .landscape {
+    display: none; /* Esconda o conteúdo landscape na orientação portrait */
+  }
+
+  .portrait {
+    ion-list {
+      height: 100%;
+    }
+
+    ion-item {
+      margin: 0 auto;
+    }
+
+    ion-input {
+      font-size: 50pt;
+      text-align: right;
+      margin-right: 7%;
+    }
+
+    ion-fab-button, ion-button {
+      width: 20%;
+      margin: 0 auto;
+      margin-top: 3%;
+      margin-bottom: 3%;
+      font-size: 20pt;
+      --background: #333333;
+      --background-activated: #a5a5a5;
+    }
+
+    .operacao {
+      --background: #ff9f0c;
+      --background-activated: #ffff;
+      --color-activated: #ff9f0c;
+    }
+
+    .operacaoClick {
+      --background: #ffffff;
+      --background-activated: #ffffff;
+      --color: #ff9f0c;
+      --color-activated: #ff9f0c;
+    }
+
+    .operacao2 {
+      --background: #a5a5a5;
+      --background-activated: #ffffff;
+      --color: #050505;
+    }
+
+    #zero {
+      --border-radius: 60px;
+      width: 45%;
+      height: 90%;
+    }
+  }
 }
 
-ion-item{
-  margin: 0 auto;
-}
+@media (orientation: landscape) {
+  .landscape {
+    ion-list {
+      height: 60%;
+      width: 0%;
+    }
+  
+    ion-item {
+      margin-left: -2%;
+      margin-top: 0.8%;
+      margin-bottom: 0%;
+      width: 105%;
+    }
+  
+    ion-input {
+      font-size: 40pt;
+      text-align: right;
+      margin-right: 3%;
+      height: 100%; 
+    }
+  
+    ion-fab-button, ion-button {
+      --border-radius: 60px;
+      height: 90%;
+      width: 17%;
+      margin: 8px;
+      margin-top: 1%;
+      margin-bottom: 1% ;
+      font-size: 15pt;
+      --background: #333333;
+      --background-activated: #a5a5a5;
+    }
+  
+    .operacao {
+      --background: #ff9f0c;
+      --background-activated: #ffff;
+      --color-activated: #ff9f0c;
+    }
+  
+    .operacaoClick {
+      --background: #ffffff;
+      --background-activated: #ffffff;
+      --color: #ff9f0c;
+      --color-activated: #ff9f0c;
+    }
+  
+    .operacao2 {
+      --background: #a5a5a5;
+      --background-activated: #ffffff;
+      --color: #050505;
+    }
+  
+    .operacao3 {
+      font-size: 10pt;
+      --background: #242323;
+      --background-activated: #242323;
+    }
 
-ion-input{
-  font-size: 50pt;
-  text-align: right;
-  margin-right: 7%;
-}
+    #zero {
+      --border-radius: 60px;
+      width: 40%;
+      height: 90%;
+      text-align: left !important;
+    }
+  }
 
-ion-fab-button, ion-button{
-  width: 20%;
-  margin: 0 auto;
-  margin-top: 3%;
-  margin-bottom: 3%;
-  font-size: 20pt;
-  --background: #333333;
-  --background-activated: #333333;
-}
-
-.operacao{
-  --background: #ff9f0c;  
-  --background-activated: #ffff;
-  --color-activated: #ff9f0c;
-}
-
-.operacaoClick {
-  --background: #ffffff; /* Cor de fundo branca */
-  --background-activated: #ffffff; /* Cor de fundo quando pressionado */
-  --color: #ff9f0c; /* Cor do texto (quando não pressionado) */
-  --color-activated: #ff9f0c; /* Cor do texto quando pressionado */
-}
-
-.operacao2{
-  --background: #a5a5a5;
-  --background-activated: #a5a5a5;
-  --color: #050505;
-}
-
-#zero{
-  --border-radius: 60px;
-  width: 45%;
-  height: 90%;
+  .portrait {
+    display: none;
+  }
 }
